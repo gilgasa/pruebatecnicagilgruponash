@@ -7,8 +7,8 @@ Contacto: gilgasan1@gmail.com
 
 ## Requerimientos de la Prueba Técnica 📋
 
-### 1. ¿Qué es una API RESTful? 🌐
-Una API RESTful (Representational State Transfer) es un tipo de API web que sigue los principios de la arquitectura REST. Las API RESTful utilizan métodos HTTP estándar (GET, POST, PUT, DELETE) para interactuar con los recursos, que son identificados mediante URLs. Los principios clave de REST incluyen la separación entre cliente y servidor, la statelessness (sin estado), la capacidad de caché, la utilización de una interfaz uniforme y la arquitectura en capas.
+### 1. ¿Qué es una API REST? 🌐
+Una API REST (Representational State Transfer) es un tipo de API web que sigue los principios de la arquitectura REST. Las API REST utilizan métodos HTTP estándar (GET, POST, PUT, DELETE) para interactuar con los recursos, que son identificados mediante URLs. Los principios clave de REST incluyen la separación entre cliente y servidor, la statelessness (sin estado), la capacidad de caché, la utilización de una interfaz uniforme y la arquitectura en capas.
 
 ### 2. Principios de la arquitectura de microservicios 🏗️
 La arquitectura de microservicios es un estilo de diseño de software que descompone una aplicación en pequeños servicios independientes, cada uno con su propia lógica de negocio y almacenamiento de datos. Los principios clave incluyen:
@@ -198,6 +198,20 @@ Esta API permite gestionar empleados dentro de una empresa. Proporciona endpoint
 ### Consola H2
 
 ![Consola H2](https://pruebadimonds.s3.us-east-2.amazonaws.com/h2.png)
+
+## Diagramas de Arquitectura y Diseño
+
+### Diagrama de Flujo del Sistema de Citas para Consultorio Médico
+
+Este diagrama describe la lógica del proceso para agendar, reagendar o cancelar citas, así como el sistema de recordatorios automáticos.
+
+![Diagrama de Flujo](https://pruebadimonds.s3.us-east-2.amazonaws.com/diagramaflujo.png)
+
+### Diagrama de Componentes de AWS
+
+Este diagrama muestra los componentes de AWS utilizados para el funcionamiento del sistema de gestión de citas para consultorio médico.
+
+![Diagrama de Componentes de AWS](https://pruebadimonds.s3.us-east-2.amazonaws.com/Diagrama+AWS.png)
 
 ## Contacto
 
