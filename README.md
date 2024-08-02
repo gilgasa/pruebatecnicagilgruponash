@@ -5,7 +5,50 @@ API REST para la gestión de empleados, implementada en Java utilizando Spring B
 Autor: Gilberto García Sánchez  
 Contacto: gilgasan1@gmail.com
 
-## Descripción 📄
+## Requerimientos de la Prueba Técnica 📋
+
+### 1. ¿Qué es una API RESTful? 🌐
+Una API RESTful (Representational State Transfer) es un tipo de API web que sigue los principios de la arquitectura REST. Las API RESTful utilizan métodos HTTP estándar (GET, POST, PUT, DELETE) para interactuar con los recursos, que son identificados mediante URLs. Los principios clave de REST incluyen la separación entre cliente y servidor, la statelessness (sin estado), la capacidad de caché, la utilización de una interfaz uniforme y la arquitectura en capas.
+
+### 2. Principios de la arquitectura de microservicios 🏗️
+La arquitectura de microservicios es un estilo de diseño de software que descompone una aplicación en pequeños servicios independientes, cada uno con su propia lógica de negocio y almacenamiento de datos. Los principios clave incluyen:
+- **Descomposición en servicios**: Cada microservicio es una unidad funcional independiente.
+- **Despliegue independiente**: Los microservicios pueden ser desplegados y escalados de forma autónoma.
+- **Comunicación a través de APIs**: Los microservicios se comunican entre sí usando APIs, generalmente sobre HTTP/HTTPS.
+- **Propiedad de datos independiente**: Cada microservicio gestiona su propia base de datos para evitar la interdependencia.
+- **Automatización de despliegue**: Se promueve el uso de CI/CD para el despliegue continuo.
+
+### 3. ¿Qué es una transacción en una base de datos y por qué es importante? 💾
+Una transacción en una base de datos es una secuencia de operaciones que se ejecutan como una sola unidad lógica de trabajo. Las transacciones son importantes porque garantizan la integridad y consistencia de los datos mediante las propiedades ACID:
+- **Atomicidad**: Todas las operaciones de una transacción se completan o ninguna se completa.
+- **Consistencia**: Las transacciones llevan la base de datos de un estado consistente a otro.
+- **Aislamiento**: Las operaciones dentro de una transacción son aisladas de otras transacciones.
+- **Durabilidad**: Una vez que una transacción se ha completado, sus cambios son permanentes.
+
+### 4. Diferencias entre bases de datos SQL y NoSQL 🗄️
+- **SQL**: Son bases de datos relacionales que utilizan un esquema estructurado y tablas con filas y columnas. Ejemplos incluyen MySQL, PostgreSQL, y Oracle.
+- **NoSQL**: Son bases de datos no relacionales que pueden usar diversos modelos de datos como documentos, grafos, clave-valor, y columnas. Ejemplos incluyen MongoDB, Cassandra, y Redis.
+
+#### Situación para usar una base de datos SQL:
+En una aplicación bancaria donde la consistencia y la integridad de los datos son críticas, y se necesita realizar operaciones complejas con JOINs.
+
+#### Situación para usar una base de datos NoSQL:
+En una aplicación de redes sociales que maneja grandes volúmenes de datos no estructurados y requiere escalabilidad horizontal, como almacenar publicaciones y comentarios en un formato de documento.
+
+### 5. ¿Qué es un índice y su importancia en una base de datos? 📈
+Un índice es una estructura de datos que mejora la velocidad de recuperación de registros en una tabla de base de datos. Los índices permiten acceder rápidamente a los datos sin tener que escanear toda la tabla, lo que mejora el rendimiento de las consultas. Sin embargo, los índices también pueden ralentizar las operaciones de inserción, actualización y eliminación, ya que la estructura del índice debe ser actualizada cada vez que cambian los datos.
+
+### 6. Servicios de AWS útiles para desarrolladores backend ☁️
+- **Amazon EC2**: Proporciona capacidad de cómputo escalable en la nube, permitiendo desplegar y gestionar servidores virtuales.
+- **Amazon S3**: Servicio de almacenamiento de objetos que permite guardar y recuperar cualquier cantidad de datos desde cualquier lugar.
+- **Amazon RDS**: Servicio de base de datos relacional que facilita la configuración, operación y escalabilidad de bases de datos en la nube.
+- **AWS Lambda**: Permite ejecutar código sin aprovisionar ni gestionar servidores, ideal para arquitecturas de microservicios y aplicaciones serverless.
+- **Amazon API Gateway**: Servicio para crear, publicar, mantener, monitorear y asegurar APIs a cualquier escala.
+- **Amazon CloudWatch**: Proporciona monitoreo y gestión de logs y métricas para aplicaciones y recursos en AWS.
+
+---
+
+## Descripción del Proyecto 📄
 
 Esta API permite gestionar empleados dentro de una empresa. Proporciona endpoints para crear, leer, actualizar y eliminar empleados. Cada empleado tiene los siguientes atributos:
 
